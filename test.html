@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test Button</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .theme-btn i {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #4527a4;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 900ms ease;
+}
+.fa-angle-right:before {
+    content: "\f105";
+}
+    .theme-btn {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      font-size: 15px;
+      padding: 12px 80px 12px 80px;
+      background: #fff;
+      line-height: 26px;
+      color: #4527a4;
+      border: 1px solid #4527a4;
+      font-weight: 500;
+      border-radius: 30px;
+      text-transform: capitalize;
+      transition: all 500ms ease;
+      cursor: pointer;
+      z-index: 1;
+  }
+  .theme-btn:hover:before {
+    transform: scale(1, 1);
+    transform-origin: bottom left;
+}
+.theme-btn:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: #4527a4;
+    border-radius: 30px;
+    transform: scale(0, 1);
+    transform-origin: top right;
+    transition: transform 500ms;
+}
+.theme-btn:hover {
+    color: #fff;
+}
+
+  </style>
+</head>
+<body>
+
+<a href="#" class="theme-btn">Book A Call<i class="fa fa-angle-right"></i></a>
+
+
+</body>
+</html>
